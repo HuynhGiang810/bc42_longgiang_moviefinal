@@ -8,9 +8,9 @@ import * as yup from "yup";
 import { MdAccountCircle } from "react-icons/md";
 import { Checkbox } from "@mantine/core";
 import styles from "./SignIn.module.scss";
-import swal from "sweetalert";
 
-// Định nghĩa các xác thực cho từng input
+
+
 const schema = yup.object({
   taiKhoan: yup.string().required("Tài khoản không được để trống"),
   matKhau: yup
@@ -28,13 +28,13 @@ function Signin() {
     handleSubmit,
     formState: { errors },
   } = useForm({
-    // Khai báo các giá trị khởi tạo cho các input
+    
     defaultValues: {
       taiKhoan: "",
       matKhau: "",
     },
     mode: "onTouched",
-    // Khai báo schema validation bằng yup
+   
     resolver: yupResolver(schema),
   });
 
