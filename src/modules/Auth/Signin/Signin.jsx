@@ -16,10 +16,7 @@ const schema = yup.object({
   matKhau: yup
     .string()
     .required("Mật khẩu không được để trống")
-    .matches(
-      /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d]{8,}$/,
-      "Mật khẩu ít nhất 8 kí tự, phải có 1 chữ hoa, 1 chữ thường và 1 số"
-    ),
+    
 });
 
 function Signin() {

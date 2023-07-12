@@ -60,17 +60,9 @@ function Footer() {
                 Không chỉ đặt vé, bạn còn có thể bình luận phim, chấm điểm rạp
                 và đổi quà hấp dẫn.
               </p>
-              <a href="https://github.com/lokilamduc">
-                <button className={styles.app}>
-                  App miễn phí - Tải về ngay!
-                </button>
-              </a>
-              https://cdn.tgdd.vn/GameApp/2/223698/Screentshots/tix-dat-ve-nhanh-nhat-01-05-2021-0.png
-              <p>
-                TIX có hai phiên bản
-                <a href="https://github.com/lokilamduc">IOS</a>&
-                <a href="https://github.com/lokilamduc">ANDROID</a>
-              </p>
+
+              
+              
             </div>
             <div>
               <img
@@ -96,7 +88,7 @@ function Footer() {
                 }}
               />
 
-             
+
             </div>
           </div>
         </div>

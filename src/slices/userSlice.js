@@ -1,11 +1,11 @@
 import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
 import { apiSignin } from "../API/userAPI";
 
-// async actions
+
 export const signin = createAsyncThunk("user/signin", async (values) => {
   try {
     const data = await apiSignin(values);
-    // Lưu thông tin user vào localStorage để giữ trạng thái đăng nhập
+    
     localStorage.setItem("user", JSON.stringify(data.content));
 
     return data.content;
@@ -15,7 +15,7 @@ export const signin = createAsyncThunk("user/signin", async (values) => {
 });
 
 const initialState = {
-  // Đồng bộ thông tin user từ localStorage vào state của redux
+
   user: JSON.parse(localStorage.getItem("user")) || null,
   isLoading: false,
   error: null,
