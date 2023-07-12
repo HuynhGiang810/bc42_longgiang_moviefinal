@@ -1,5 +1,5 @@
 import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
-import bookingMovieAPI from "../apis/bookingMovieAPI";
+import bookingMovieAPI from "../API/movieAPI";
 
 const initialState = {
   loading: false,

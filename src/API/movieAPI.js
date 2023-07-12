@@ -78,3 +78,19 @@ export const apiGetLichChieuPhim = async (maPhim) => {
     );
     return data;
 };
+
+const bookingMovieAPI = {
+    getListBooking: (maLichChieu) => {
+        return axiosmain.get("QuanLyDatVe/LayDanhSachPhongVe", {
+            params: {
+                MaLichChieu: maLichChieu,
+            }
+        })
+    },
+
+    postBookingTicket: (DanhSachVe) => {
+        return axiosmain.post("QuanLyDatVe/DatVe", DanhSachVe)
+    }
+}
+
+export default bookingMovieAPI;

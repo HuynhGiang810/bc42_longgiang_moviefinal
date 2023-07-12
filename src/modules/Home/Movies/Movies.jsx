@@ -7,8 +7,10 @@ import { Modal } from "react-bootstrap"
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
-import SwiperCore, { Pagination, Grid } from "swiper";
-
+import { Pagination, Grid } from "swiper/modules";
+import SwiperCore from "swiper"
+import 'swiper/css';
+import 'swiper/css/bundle';
 import "swiper/css/grid";
 
 SwiperCore.use([Pagination, Grid]);
@@ -45,7 +47,6 @@ function Movies() {
     <div className={styles.wrapper} id="phim">
       <Swiper
         slidesPerView={4}
-        // spaceBetween={25}
         grid={{
           rows: 2,
           fill: "row",

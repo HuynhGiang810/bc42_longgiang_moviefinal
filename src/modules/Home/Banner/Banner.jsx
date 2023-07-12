@@ -5,8 +5,8 @@ import styles from "./Banner.module.scss";
 import "swiper/css/navigation";
 
 import "swiper/css/pagination";
-import { Navigation, Pagination } from "swiper";
-import SwiperCore, { EffectFade } from "swiper";
+import { Navigation, Pagination } from "swiper/modules";
+import SwiperCore, { EffectFade } from "swiper/modules";
 
 
 function Banner() {

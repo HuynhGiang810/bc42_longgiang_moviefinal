@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import { Table } from "@mantine/core";
 import { useDispatch, useSelector } from "react-redux";
 import Loading from "../../../components/Loading/Loading";
-import bookingMovieAPI from "../../../apis/bookingMovieAPI";
+import bookingMovieAPI from "../../../API/movieAPI";
 import { calcTotal, reloadBooking } from "../../../slices/bookingMovieSlice";
 import styles from "./InfoBooking.module.scss";
 import swal from "sweetalert";
