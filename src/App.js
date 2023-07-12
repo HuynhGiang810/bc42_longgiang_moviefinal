@@ -9,6 +9,9 @@ import Signup from './modules/Auth/Signup/Signup';
 import Signin from './modules/Auth/Signin/Signin';
 import MainLayout from './layouts/MainLayout/MainLayout';
 import AuthLayout from './layouts/AuthLayout/AuthLayout';
+import AdminLayout from './layouts/AdminLayout/AdminLayout';
+import AdminRoute from './routes/AdminRoute';
+import MovieManagement from './modules/MovieManagement/MovieManagement';
 
 
 function App() {
@@ -35,6 +38,17 @@ function App() {
           <Route path="/signin" element={<Signin />} />
           <Route path="/signup" element={<Signup />} />
         </Route>
+
+        <Route
+            path="/admin"
+            element={
+              <AdminRoute>
+                <AdminLayout />
+              </AdminRoute>
+            }
+          >
+            <Route path="movies" element={<MovieManagement />} />
+          </Route>
       </Routes>
 
 

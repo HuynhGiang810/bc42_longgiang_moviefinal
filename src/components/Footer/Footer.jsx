@@ -1,14 +1,9 @@
 import React, { useState, useEffect } from "react";
 import styles from "./Footer.module.scss";
 import { apiGetHeThongRap } from "../../API/movieAPI";
-import { experimentalStyled as styled } from "@mui/material/styles";
-// import Box from "@mui/material/Box";
-// import Paper from "@mui/material/Paper";
-// import Grid from "@mui/material/Grid";
 import { Container } from "react-bootstrap";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
-import Carousel from "react-bootstrap/Carousel";
 
 function Footer() {
   const [heThongRap, setHeThongRap] = useState([]);
