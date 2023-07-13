@@ -12,6 +12,10 @@ import AuthLayout from './layouts/AuthLayout/AuthLayout';
 import AdminLayout from './layouts/AdminLayout/AdminLayout';
 import AdminRoute from './routes/AdminRoute';
 import MovieManagement from './modules/MovieManagement/MovieManagement';
+import EditFilm from './modules/MovieManagement/EditFilm/EditFilm';
+import MovieForm from './modules/MovieManagement/MovieForm/MovieForm';
+import UserManagement from './modules/UserManagement/UserManagement';
+import UserForm from './modules/UserManagement/UserList/UserList';
 
 
 function App() {
@@ -47,7 +51,11 @@ function App() {
               </AdminRoute>
             }
           >
+            <Route path="users" element={<UserManagement />} />
+            <Route path="users/userform" element={<UserForm />} />
             <Route path="movies" element={<MovieManagement />} />
+            <Route path="movies/editfilm/:id" element={<EditFilm />} />
+            <Route path="movies/addfilm" element={<MovieForm />} />
           </Route>
       </Routes>
 
