@@ -16,6 +16,7 @@ import EditFilm from './modules/MovieManagement/EditFilm/EditFilm';
 import MovieForm from './modules/MovieManagement/MovieForm/MovieForm';
 import UserManagement from './modules/UserManagement/UserManagement';
 import UserForm from './modules/UserManagement/UserList/UserList';
+import ShowtimesManagement from './modules/ShowtimestManagement/ShowtimesManagement';
 
 
 function App() {
@@ -56,6 +57,7 @@ function App() {
             <Route path="movies" element={<MovieManagement />} />
             <Route path="movies/editfilm/:id" element={<EditFilm />} />
             <Route path="movies/addfilm" element={<MovieForm />} />
+            <Route path="showtimes/:id" element={<ShowtimesManagement />} />
           </Route>
       </Routes>
 
